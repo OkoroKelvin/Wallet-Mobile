@@ -3,10 +3,11 @@ import { StatusBar } from "expo-status-bar";
 import styled from "styled-components/native";
 import { Container } from "../components/shared";
 import { colors } from "../components/colors";
+import background from "./../assets/bgs/background_h1.png";
 
 
 const WelcomeContainer = styled(Container)`
-background-color: ${colors.graylight};
+background-color: ${colors.secondary};
 justify-content: space-between;
 width: 100%;
 height:100%;
@@ -26,17 +27,24 @@ flex:1;
 `;
 
 const BottomSection = styled.View`
-width:100%,
-padding:25x;
+width:100%;
+padding:25px;
 flex:1;
-`
+`;
+
+
 
 const Welcome: FunctionComponent =()=>{
     
     return (
         <>
          <StatusBar style="light"/>
-         <WelcomeContainer></WelcomeContainer>
+         <WelcomeContainer>
+            <TopSection>
+                <TopImage source={background}/>
+            </TopSection>
+            <BottomSection></BottomSection>
+         </WelcomeContainer>
         </>
        
         
