@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import styled from "styled-components/native"
 import { Container } from "../components/shared";
 import { colors } from "../components/colors";
+import { StatusBar } from "expo-status-bar";
 
 const HomeContainer = styled(Container)`
     background-color:${colors.graylight};
@@ -11,7 +12,7 @@ const HomeContainer = styled(Container)`
 const Home: FunctionComponent = ()=>{
     return (
         <HomeContainer>
-            
+            <StatusBar style="dark"/>
         </HomeContainer>
 
     );
