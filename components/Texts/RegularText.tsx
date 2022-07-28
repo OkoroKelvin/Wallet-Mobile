@@ -21,3 +21,4 @@ const RegularText = (props: {
 };
 
 export default RegularText;
+ 
